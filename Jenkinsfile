@@ -4,6 +4,7 @@ node {
     }
     stage('Checkout SCM') {
         checkout scm
+        echo "code checkout done"
     }
     def pythonImage
     stage('build docker image') {
